@@ -1,6 +1,6 @@
 <h2 align="left">Hi 👋! I'm Vaidik...</h2>
 
----
+-----
 
 ### 🚀 About Me
 - 🎓 MCA Student | Aspiring Software Engineer  
