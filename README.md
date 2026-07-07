@@ -8,7 +8,7 @@
 - 💻 Python • Web Development • Backend  
 - 🌱 Currently learning Flask, ML basics & system design  
 - ⚡ Passionate about building real-world projects
-- 🏆 Hackathon Winner(E.D.G.E mini project hackathon)
+- 🏆 Hackathon Winner(E.D.G.E mini project hackathon- AI-ML track)
 
 ---
 
