@@ -132,16 +132,6 @@
 
 ---
 
-## 🎵 Recently Played on Spotify
-
-<p align="center">
-  <a href="https://open.spotify.com/user/31eupaek74k5ogjcezi6slhbocx4" target="_blank">
-    <img src="https://spotify-recently-played-readme.vercel.app/api?user=31eupaek74k5ogjcezi6slhbocx4&count=5" alt="Spotify recently played" />
-  </a>
-</p>
-
----
-
 ## 💡 Developer Quotes & Activity
 
 <table align="center" width="100%">
