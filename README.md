@@ -70,7 +70,7 @@
       <img src="https://github-stats-extended.vercel.app/api?username=Vaidik-Pipaliya&theme=dark&hide_border=false&include_all_commits=true&count_private=true" alt="Vaidik's GitHub Stats" width="100%" />
     </td>
     <td align="center" width="50%">
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Vaidik-Pipaliya&theme=dark&hide_border=false" alt="Vaidik's Commit Streaks" width="100%" />
+      <img src="https://streak-stats.demolab.com/?user=Vaidik-Pipaliya&theme=dark&hide_border=false" alt="Vaidik's Commit Streaks" width="100%" />
     </td>
   </tr>
   <tr>
