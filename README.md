@@ -9,20 +9,6 @@
   </picture>
 </p>
 
-<h2 align="left">Hi 👋! I'm Vaidik_Pipaliya....</h2>
-
-------
-
-### 🚀 About Me
-- 🎓 MCA Student | Aspiring Software Engineer
-- 🤖 Passionate about Machine Learning, NLP , Data Analytics
-- 💻 Python • Web Development • Backend  
-- 🌱 Currently learning Flask, ML basics & system design  
-- ⚡ Passionate about building real-world projects
-- 🏆 Hackathon Winner("E.D.G.E mini project hackathon- AI-ML track")
-
----
-
 # 📊 GitHub Stats:
 ![](https://github-stats-extended.vercel.app/api?username=Vaidik-Pipaliya&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://nirzak-streak-stats.vercel.app/?user=Vaidik-Pipaliya&theme=dark&hide_border=false)<br/>
