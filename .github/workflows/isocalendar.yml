@@ -1,4 +1,4 @@
-name: Generate Snake
+name: Generate Isometric Calendar
 
 # Allow the workflow to push to branches (needed for the push step)
 permissions:
@@ -18,14 +18,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Generate Snake
-        uses: Platane/snk/svg-only@v3
+      - name: Generate Isometric Calendar
+        uses: lowlighter/metrics@latest
         with:
-          # Use repository owner dynamically so the workflow is reusable
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/snake.svg?color_snake=orange
-            dist/snake-dark.svg?palette=github-dark&color_snake=orange
+          filename: dist/isocalendar.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          output_action: none
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: fullyear
 
       - name: List dist contents (debug)
         run: |

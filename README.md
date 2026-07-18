@@ -89,10 +89,9 @@
 </div>
 
 
-<!-- DARK-MODE AWARE SNAKE IMAGE -->
+<!-- 3D ISOMETRIC CALENDAR CONTRIBUTION GRAPH -->
 <picture>
-  <source srcset="https://raw.githubusercontent.com/initVD-007/initVD-007/output/snake-dark.svg" media="(prefers-color-scheme: dark)">
-  <img src="https://raw.githubusercontent.com/initVD-007/initVD-007/output/snake.svg" alt="Snake animation" />
+  <img src="https://raw.githubusercontent.com/Vaidik-Pipaliya/Vaidik-Pipaliya/output/isocalendar.svg" alt="Metrics Isometric Calendar" width="100%" />
 </picture>
 
 ---
