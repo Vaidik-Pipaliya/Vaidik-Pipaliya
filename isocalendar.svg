@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="480" height="372" class="">
-
+  <rect width="100%" height="100%" fill="#0d1117" rx="6"/>
   <defs><style/></defs>
   <style data-optimizable="true">/* SVG global context */
   svg {
