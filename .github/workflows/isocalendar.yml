@@ -16,13 +16,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
+      - name: Create dist directory
+        run: mkdir -p dist
 
       - name: Generate Isometric Calendar
         uses: lowlighter/metrics@latest
         with:
           filename: dist/isocalendar.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+          user: Vaidik-Pipaliya
           output_action: none
           base: ""
           plugin_isocalendar: yes
