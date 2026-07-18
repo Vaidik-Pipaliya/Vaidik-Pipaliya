@@ -201,10 +201,21 @@ function buildAmbientPortraitLayer(layout, colors, size) {
   <ellipse cx="${centerX.toFixed(1)}" cy="${centerY.toFixed(1)}" rx="${(orbitWidth * 0.5).toFixed(1)}" ry="${(orbitHeight * 0.5).toFixed(1)}" fill="none" stroke="${colors.blue}" stroke-width="1" stroke-dasharray="3 14" opacity="0.13"><animateTransform attributeName="transform" type="rotate" from="0 ${centerX.toFixed(1)} ${centerY.toFixed(1)}" to="360 ${centerX.toFixed(1)} ${centerY.toFixed(1)}" dur="42s" repeatCount="indefinite"/></ellipse>
   <ellipse cx="${centerX.toFixed(1)}" cy="${centerY.toFixed(1)}" rx="${(orbitWidth * 0.4).toFixed(1)}" ry="${(orbitHeight * 0.38).toFixed(1)}" fill="none" stroke="${colors.violet}" stroke-width="1" stroke-dasharray="28 24" opacity="0.1"><animateTransform attributeName="transform" type="rotate" from="360 ${centerX.toFixed(1)} ${centerY.toFixed(1)}" to="0 ${centerX.toFixed(1)} ${centerY.toFixed(1)}" dur="34s" repeatCount="indefinite"/></ellipse>
   <path d="M ${left} ${top} H ${left + (isDesktop ? 42 : 62)} M ${left} ${top} V ${top + (isDesktop ? 42 : 54)} M ${right} ${bottom} H ${right - (isDesktop ? 42 : 62)} M ${right} ${bottom} V ${bottom - (isDesktop ? 42 : 54)}" fill="none" stroke="${colors.cyan}" stroke-width="1.2" opacity="0.2"/>
+  
+  <!-- Glowing Scanning Laser -->
+  <line x1="${clip.x}" y1="${clip.y}" x2="${clip.x + clip.width}" y2="${clip.y}" stroke="${colors.cyan}" stroke-width="1.8" opacity="0.8" filter="url(#laser-glow)">
+    <animate attributeName="y1" values="${clip.y - 5};${clip.y + clip.height + 5};${clip.y - 5}" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="${clip.y - 5};${clip.y + clip.height + 5};${clip.y - 5}" dur="4s" repeatCount="indefinite"/>
+  </line>
+  <!-- Laser scan trail gradient -->
+  <rect x="${clip.x}" y="${clip.y}" width="${clip.width}" height="28" fill="url(#laser-gradient)" opacity="0.25">
+    <animate attributeName="y" values="${clip.y - 33};${clip.y + clip.height - 23};${clip.y - 33}" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
   <path d="M ${left} ${(centerY + 42).toFixed(1)} C ${left + 32} ${(centerY + 8).toFixed(1)}, ${(centerX - orbitWidth * 0.3).toFixed(1)} ${(centerY + 58).toFixed(1)}, ${(centerX - orbitWidth * 0.19).toFixed(1)} ${(centerY + 27).toFixed(1)}" fill="none" stroke="${colors.blue}" opacity="0.12"/>
   <path d="M ${right} ${(centerY - 52).toFixed(1)} C ${right - 38} ${(centerY - 18).toFixed(1)}, ${(centerX + orbitWidth * 0.31).toFixed(1)} ${(centerY - 70).toFixed(1)}, ${(centerX + orbitWidth * 0.2).toFixed(1)} ${(centerY - 30).toFixed(1)}" fill="none" stroke="${colors.green}" opacity="0.11"/>
   <g fill="${colors.cyan}"><circle cx="${left}" cy="${top}" r="2.2" opacity="0.42"><animate attributeName="opacity" values="0.2;0.58;0.2" dur="5.6s" repeatCount="indefinite"/></circle><circle cx="${right}" cy="${bottom}" r="2.2" opacity="0.42"><animate attributeName="opacity" values="0.58;0.2;0.58" dur="6.4s" repeatCount="indefinite"/></circle><circle cx="${left + (isDesktop ? 12 : 18)}" cy="${(centerY + 48).toFixed(1)}" r="1.7" opacity="0.32"/><circle cx="${right - (isDesktop ? 10 : 16)}" cy="${(centerY - 58).toFixed(1)}" r="1.7" opacity="0.28"/></g>
-</g>`;
+</g>;`;
 }
 
 function createHeroSvg(config, colors, size, portrait) {
@@ -237,6 +248,17 @@ function createHeroSvg(config, colors, size, portrait) {
   <pattern id="portrait-grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M 44 0 H 0 V 44" fill="none" stroke="${colors.blue}" stroke-width="0.65" opacity="0.085"/><circle cx="0" cy="0" r="1.2" fill="${colors.cyan}" opacity="0.13"/></pattern>
   <clipPath id="portrait-clip"><rect x="${clip.x}" y="${clip.y}" width="${clip.width}" height="${clip.height}" rx="${clip.radius}"/></clipPath>
   <mask id="portrait-reveal"><rect x="${clip.x}" y="${clip.y}" width="${clip.width}" height="0" rx="${clip.radius}" fill="white"><animate attributeName="height" from="0" to="${clip.height}" dur="2.1s" begin="0.12s" fill="freeze"/></rect></mask>
+  <filter id="laser-glow" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="2.5" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <linearGradient id="laser-gradient" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="${colors.cyan}" stop-opacity="0"/>
+    <stop offset="100%" stop-color="${colors.cyan}" stop-opacity="0.45"/>
+  </linearGradient>
   ${system.clips}
   <style>
     .mono { font-family: 'Courier New', Consolas, monospace; }

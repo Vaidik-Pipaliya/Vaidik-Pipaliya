@@ -11,6 +11,17 @@
   <pattern id="portrait-grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M 44 0 H 0 V 44" fill="none" stroke="#38BDF8" stroke-width="0.65" opacity="0.085"/><circle cx="0" cy="0" r="1.2" fill="#22D3EE" opacity="0.13"/></pattern>
   <clipPath id="portrait-clip"><rect x="58" y="122" width="604" height="312" rx="12"/></clipPath>
   <mask id="portrait-reveal"><rect x="58" y="122" width="604" height="0" rx="12" fill="white"><animate attributeName="height" from="0" to="312" dur="2.1s" begin="0.12s" fill="freeze"/></rect></mask>
+  <filter id="laser-glow" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="2.5" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <linearGradient id="laser-gradient" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#22D3EE" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#22D3EE" stop-opacity="0.45"/>
+  </linearGradient>
   <clipPath id="system-line-0"><rect x="69" y="505.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="0.68s" fill="freeze"/></rect></clipPath>
 <clipPath id="system-line-1"><rect x="69" y="526.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="0.79s" fill="freeze"/></rect></clipPath>
 <clipPath id="system-line-2"><rect x="69" y="547.00" width="0" height="21"><animate attributeName="width" from="0" to="574" dur="0.36s" begin="0.89s" fill="freeze"/></rect></clipPath>
@@ -57,10 +68,21 @@
   <ellipse cx="360.0" cy="256.2" rx="247.6" ry="96.7" fill="none" stroke="#38BDF8" stroke-width="1" stroke-dasharray="3 14" opacity="0.13"><animateTransform attributeName="transform" type="rotate" from="0 360.0 256.2" to="360 360.0 256.2" dur="42s" repeatCount="indefinite"/></ellipse>
   <ellipse cx="360.0" cy="256.2" rx="198.1" ry="73.5" fill="none" stroke="#7C3AED" stroke-width="1" stroke-dasharray="28 24" opacity="0.1"><animateTransform attributeName="transform" type="rotate" from="360 360.0 256.2" to="0 360.0 256.2" dur="34s" repeatCount="indefinite"/></ellipse>
   <path d="M 92 160 H 154 M 92 160 V 214 M 628 404 H 566 M 628 404 V 350" fill="none" stroke="#22D3EE" stroke-width="1.2" opacity="0.2"/>
+  
+  <!-- Glowing Scanning Laser -->
+  <line x1="58" y1="122" x2="662" y2="122" stroke="#22D3EE" stroke-width="1.8" opacity="0.8" filter="url(#laser-glow)">
+    <animate attributeName="y1" values="117;439;117" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="y2" values="117;439;117" dur="4s" repeatCount="indefinite"/>
+  </line>
+  <!-- Laser scan trail gradient -->
+  <rect x="58" y="122" width="604" height="28" fill="url(#laser-gradient)" opacity="0.25">
+    <animate attributeName="y" values="89;411;89" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
   <path d="M 92 298.2 C 124 264.2, 211.4 314.2, 265.9 283.2" fill="none" stroke="#38BDF8" opacity="0.12"/>
   <path d="M 628 204.2 C 590 238.2, 513.5 186.2, 459.1 226.2" fill="none" stroke="#10B981" opacity="0.11"/>
   <g fill="#22D3EE"><circle cx="92" cy="160" r="2.2" opacity="0.42"><animate attributeName="opacity" values="0.2;0.58;0.2" dur="5.6s" repeatCount="indefinite"/></circle><circle cx="628" cy="404" r="2.2" opacity="0.42"><animate attributeName="opacity" values="0.58;0.2;0.58" dur="6.4s" repeatCount="indefinite"/></circle><circle cx="110" cy="304.2" r="1.7" opacity="0.32"/><circle cx="612" cy="198.2" r="1.7" opacity="0.28"/></g>
-</g>
+</g>;
 <g clip-path="url(#portrait-clip)" mask="url(#portrait-reveal)"><text class="ascii"><tspan x="180" y="132.00" xml:space="preserve">                                .-*#%@@@%@@%%@@*.                                   </tspan>
 <tspan x="180" y="137.70" xml:space="preserve">                              #@@@@@@@@@@@@@@@@@@@#+:                               </tspan>
 <tspan x="180" y="143.40" xml:space="preserve">                             @@@@@#@**##%*#**#%%@@@@@@=                             </tspan>
