@@ -6,6 +6,9 @@ permissions:
 
 on:
   # Run automatically every 24 hours
+  push:
+    branches:
+      - main
   schedule:
     - cron: "0 0 * * *"
   # Allows you to manually run the job at any time from the Actions tab
