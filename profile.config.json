@@ -1,0 +1,109 @@
+{
+  "$schema": "./profile.schema.json",
+  "profile": {
+    "name": "Vaidik Pipaliya",
+    "username": "Vaidik-Pipaliya",
+    "headline": "AI Developer & MCA Student",
+    "affiliation": "MCA Student",
+    "location": "India",
+    "status": "Learning, Building & Growing",
+    "about": [
+      "I am an MCA student and aspiring software engineer passionate about Machine Learning, Natural Language Processing, and Data Analytics.",
+      "I focus on building real-world projects such as reservation systems and ML-based detection apps using Python, Flask, and JavaScript."
+    ]
+  },
+  "research": {
+    "primary": "Machine Learning & NLP",
+    "direction": "Applied ML and Predictive Modeling",
+    "themes": "Classification / Hate Speech / CV",
+    "narrative": "My exploration centers on applying machine learning algorithms to practical problems, from natural language classification (hate speech detection) to agricultural computer vision diagnostics."
+  },
+  "focus": [
+    {
+      "name": "Machine Learning",
+      "description": "Building and fine-tuning models for classification, NLP, and predictive analytics."
+    },
+    {
+      "name": "Web Development",
+      "description": "Creating backend systems and dynamic user interfaces using Flask, Django, and JavaScript."
+    },
+    {
+      "name": "Data Analytics",
+      "description": "Extracting insights from complex datasets and visualizing patterns for decision making."
+    }
+  ],
+  "projects": [
+    {
+      "name": "RestFast",
+      "url": "https://github.com/Vaidik-Pipaliya/RestFast",
+      "homepage": "",
+      "focus": "Restaurant Booking System",
+      "summary": "A dining reservation platform built with HTML, CSS, and JavaScript, featuring table booking and a 2-hour limit live countdown.",
+      "heroLabel": "Restaurant Reservation"
+    },
+    {
+      "name": "CyberGuard",
+      "url": "https://github.com/Vaidik-Pipaliya/cyberbullying-detection",
+      "homepage": "",
+      "focus": "ML & NLP Classification",
+      "summary": "Detects abusive and harmful cyberbullying content on social platforms using Python, Flask, and Machine Learning.",
+      "heroLabel": "Abuse Detection Model"
+    },
+    {
+      "name": "Krishi Rakshak",
+      "url": "https://github.com/Vaidik-Pipaliya/krishi-rakshak",
+      "homepage": "",
+      "focus": "Agricultural Computer Vision",
+      "summary": "A farming assistant that detects crop and plant diseases from uploaded images using Python, Flask, and ML/CNNs.",
+      "heroLabel": "Plant Disease Classifier"
+    }
+  ],
+  "techStack": [
+    "Python",
+    "Flask",
+    "Django",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Machine Learning",
+    "NLP"
+  ],
+  "links": [
+    {
+      "label": "LinkedIn",
+      "value": "vaidik-pipaliya",
+      "url": "https://www.linkedin.com/in/vaidik-pipaliya/",
+      "logo": "linkedin",
+      "color": "0077B5"
+    },
+    {
+      "label": "LeetCode",
+      "value": "Vaidik_Pipaliya",
+      "url": "https://leetcode.com/Vaidik_Pipaliya",
+      "logo": "leetcode",
+      "color": "FFA116"
+    },
+    {
+      "label": "Medium",
+      "value": "Vaidikpipaliya",
+      "url": "https://medium.com/@Vaidikpipaliya",
+      "logo": "medium",
+      "color": "12100E"
+    },
+    {
+      "label": "Email",
+      "value": "vaidikpipaliya",
+      "url": "https://mail.google.com/mail/?view=cm&fs=1&to=vaidikpipaliya@gmail.com",
+      "logo": "gmail",
+      "color": "EA4335"
+    }
+  ],
+  "activity": {
+    "enabled": true,
+    "limit": 6
+  },
+  "appearance": {
+    "palette": "signal"
+  },
+  "footer": "Striving to build intelligent, practical software solutions."
+}
