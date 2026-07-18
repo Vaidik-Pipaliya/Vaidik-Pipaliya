@@ -127,12 +127,12 @@ async function samplePortrait(sourceBuffer, columns, rows) {
   return { pixels, width: info.width, height: info.height };
 }
 
-function createAsciiTspans({ pixels, width, height }, placement) {
-  const characters = " .:-=+*#%@";
-  const rows = [];
-
+function createDotMatrixPath({ pixels, width, height }, placement) {
+  const cellW = placement.lineHeight * 0.72;
+  const cellH = placement.lineHeight;
+  let pathD = "";
+  
   for (let row = 0; row < height; row += 1) {
-    let line = "";
     for (let column = 0; column < width; column += 1) {
       const index = row * width + column;
       const pixel = pixels[index];
@@ -142,18 +142,21 @@ function createAsciiTspans({ pixels, width, height }, placement) {
       const below = pixels[Math.min(row + 1, height - 1) * width + column];
       const darkness = (255 - pixel) / 255;
       const edge = (Math.abs(right - left) + Math.abs(below - above)) / 510;
-      if (darkness < 0.045 && edge < 0.04) {
-        line += " ";
-        continue;
-      }
+      
+      if (darkness < 0.08 && edge < 0.05) continue;
+      
+      const cx = placement.x + column * cellW;
+      const cy = placement.y + row * cellH;
       const ink = clamp(darkness * 0.7 + edge * 1.8 - 0.025, 0, 1);
-      line += characters[Math.round(ink * (characters.length - 1))];
+      const r = (cellW / 2) * ink * 0.95;
+      
+      if (r < 0.45) continue;
+      
+      pathD += `M ${cx.toFixed(1)} ${cy.toFixed(1)} m -${r.toFixed(1)},0 a ${r.toFixed(1)},${r.toFixed(1)} 0 1,0 ${(2*r).toFixed(1)},0 a ${r.toFixed(1)},${r.toFixed(1)} 0 1,0 -${(2*r).toFixed(1)},0 `;
     }
-
-    rows.push(`<tspan x="${placement.x}" y="${(placement.y + row * placement.lineHeight).toFixed(2)}" xml:space="preserve">${escapeXml(line)}</tspan>`);
   }
-
-  return rows.join("\n");
+  
+  return pathD;
 }
 
 function buildSystemLayer(profileLines, { x, y, width, lineHeight, fontSize }, colors) {
@@ -225,7 +228,7 @@ function createHeroSvg(config, colors, size, portrait) {
   const info = layout.infoPanel;
   const clip = layout.portraitClip;
   const profileLines = buildProfileLines(config);
-  const ascii = createAsciiTspans(portrait, layout.portrait);
+  const dotMatrixPath = createDotMatrixPath(portrait, layout.portrait);
   const system = buildSystemLayer(profileLines, layout.system, colors);
   const ambientPortrait = buildAmbientPortraitLayer(layout, colors, size);
   const isDesktop = size === "desktop";
@@ -283,7 +286,7 @@ ${isDesktop ? `<circle cx="${liveX}" cy="${titlebar.y + titlebar.height / 2}" r=
 <text x="${layout.visualTitle.x}" y="${layout.visualTitle.y}" class="panel-title">VISUAL.MAP / PORTRAIT.SIGNAL</text>
 <text x="${layout.infoTitle.x}" y="${layout.infoTitle.y}" class="panel-title">SYSTEM.INFO / RESEARCH.BUILDER</text>
 ${ambientPortrait}
-<g clip-path="url(#portrait-clip)" mask="url(#portrait-reveal)"><text class="ascii">${ascii}</text></g>
+<g clip-path="url(#portrait-clip)" mask="url(#portrait-reveal)"><path class="ascii" d="${dotMatrixPath}" fill="url(#ascii-signal)"/></g>
 ${system.rows}
 <rect x="${layout.system.x + 2}" y="${cursorY}" width="9" height="${layout.system.fontSize + 2}" fill="${colors.cyan}" opacity="0"><animate attributeName="opacity" values="0;0;1;0;1;0;1;0" keyTimes="0;0.03;0.06;0.32;0.5;0.68;0.84;1" dur="1.4s" begin="3.3s" repeatCount="indefinite"/></rect>
 <text x="${layout.width / 2}" y="${layout.footerY}" text-anchor="middle" class="mono" font-size="10" letter-spacing="1.5" fill="${colors.muted}">${escapeXml(footerLabel)}</text>
