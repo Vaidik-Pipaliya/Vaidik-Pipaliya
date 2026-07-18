@@ -91,7 +91,7 @@
 
 <!-- 3D ISOMETRIC CALENDAR CONTRIBUTION GRAPH -->
 <picture>
-  <img src="https://raw.githubusercontent.com/Vaidik-Pipaliya/Vaidik-Pipaliya/main/isocalendar.svg" alt="Metrics Isometric Calendar" width="100%" />
+  <img src="https://raw.githubusercontent.com/Vaidik-Pipaliya/Vaidik-Pipaliya/output/isocalendar.svg" alt="Metrics Isometric Calendar" width="100%" />
 </picture>
 
 ---

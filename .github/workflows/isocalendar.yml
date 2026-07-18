@@ -21,19 +21,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Create dist directory
-        run: mkdir -p dist
+      - name: Generate 3D contribution graph
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: Vaidik-Pipaliya
 
-      - name: Generate Isometric Calendar
-        uses: lowlighter/metrics@latest
-        with:
-          filename: dist/isocalendar.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-          user: Vaidik-Pipaliya
-          output_action: none
-          base: ""
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: fullyear
+      - name: Move SVG to dist
+        run: |
+          mkdir -p dist
+          cp profile-3d-contrib/profile-green-animate.svg dist/isocalendar.svg
 
       - name: List dist contents (debug)
         run: |
