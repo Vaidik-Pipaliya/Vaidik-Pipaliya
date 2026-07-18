@@ -101,11 +101,11 @@ async function samplePortrait(sourceBuffer, columns, rows) {
     .ensureAlpha()
     .trim(trimOptions)
     .flatten({ background: "#FFFFFF" })
-    .modulate({ brightness: 1.6, contrast: 1.25 })
+    .modulate({ brightness: 1.25, contrast: 1.35 })
     .greyscale()
     .normalise()
     .gamma(1.05)
-    .sharpen()
+    .sharpen({ sigma: 1.2, m1: 1.0, m2: 2.0 })
     .resize(columns, rows, resizeOptions)
     .raw()
     .toBuffer({ resolveWithObject: true });
@@ -146,7 +146,7 @@ function createAsciiTspans({ pixels, width, height }, placement) {
         line += " ";
         continue;
       }
-      const ink = clamp(darkness * 1.02 + edge * 0.5 - 0.025, 0, 1);
+      const ink = clamp(darkness * 0.7 + edge * 1.8 - 0.025, 0, 1);
       line += characters[Math.round(ink * (characters.length - 1))];
     }
 
