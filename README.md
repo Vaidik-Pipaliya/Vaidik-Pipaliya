@@ -24,14 +24,14 @@
 ---
 
 # 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=Vaidik-Pipaliya&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
+![](https://github-stats-extended.vercel.app/api?username=Vaidik-Pipaliya&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://nirzak-streak-stats.vercel.app/?user=Vaidik-Pipaliya&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Vaidik-Pipaliya&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+![](https://github-stats-extended.vercel.app/api/top-langs/?username=Vaidik-Pipaliya&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
 ---
 
 ## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=Vaidik-Pipaliya&theme=darkhub&no-frame=false&row=1&column=7)
+![](https://github-profile-trophy-unserori.vercel.app/?username=Vaidik-Pipaliya&theme=darkhub&no-frame=false&row=1&column=7)
 
 ---
 
