@@ -101,6 +101,7 @@ async function samplePortrait(sourceBuffer, columns, rows) {
     .ensureAlpha()
     .trim(trimOptions)
     .flatten({ background: "#FFFFFF" })
+    .modulate({ brightness: 1.6, contrast: 1.25 })
     .greyscale()
     .normalise()
     .gamma(1.05)
