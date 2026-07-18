@@ -30,7 +30,7 @@ jobs:
       - name: Move SVG to dist
         run: |
           mkdir -p dist
-          cp profile-3d-contrib/profile-night-green-animate.svg dist/isocalendar.svg
+          cp profile-3d-contrib/profile-night-view.svg dist/isocalendar.svg
 
       - name: List dist contents (debug)
         run: |
