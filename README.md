@@ -9,126 +9,153 @@
   </picture>
 </p>
 
-# 📊 GitHub Stats:
-![](https://github-stats-extended.vercel.app/api?username=Vaidik-Pipaliya&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=Vaidik-Pipaliya&theme=dark&hide_border=false)<br/>
-![](https://github-stats-extended.vercel.app/api/top-langs/?username=Vaidik-Pipaliya&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+<h1 align="center">Hi, I'm Vaidik Pipaliya 👋</h1>
+<p align="center">
+  <strong>AI Developer | Machine Learning Engineer | MCA Student</strong>
+</p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/vaidik-pipaliya/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="mailto:vaidikpipaliya@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+  <a href="https://medium.com/@Vaidikpipaliya" target="_blank"><img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium" /></a>
+</p>
+
+<p align="center">
+  <img src="https://visitcount.itsvg.in/api?id=Vaidik-Pipaliya&icon=0&color=0" alt="Visitor Count" />
+</p>
 
 ---
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy-unserori.vercel.app/?username=Vaidik-Pipaliya&theme=darkhub&no-frame=false&row=1&column=7)
+## 🛠️ Tech Stack & Skill Levels
 
----
-
-## 📈 Contribution Graph
-![](https://github-readme-activity-graph.vercel.app/graph?username=Vaidik-Pipaliya&theme=react-dark)
-
----
-
-[![](https://visitcount.itsvg.in/api?id=Vaidik-Pipaliya&icon=0&color=0)](https://visitcount.itsvg.in)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
-
-###
-
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo" />
+<div align="center">
+  <!-- Devicons Row -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="38" alt="python logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="38" alt="javascript logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5 logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="38" alt="html5 logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="css3 logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="38" alt="css3 logo" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" height="30" alt="django logo" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" height="38" alt="django logo" />
+  
+  <br/><br/>
+  
+  <!-- Shields.io Skill Badges -->
+  <img src="https://img.shields.io/badge/Python-Advanced-blue?style=flat-square&logo=python" />
+  <img src="https://img.shields.io/badge/JavaScript-Intermediate-yellow?style=flat-square&logo=javascript" />
+  <img src="https://img.shields.io/badge/HTML5-Advanced-orange?style=flat-square&logo=html5" />
+  <img src="https://img.shields.io/badge/CSS3-Advanced-blueviolet?style=flat-square&logo=css3" />
+  <img src="https://img.shields.io/badge/Django-Intermediate-green?style=flat-square&logo=django" />
 </div>
-
----
-
-## 🛠️ Skill Levels
-![Python](https://img.shields.io/badge/Python-Advanced-blue)
-![JavaScript](https://img.shields.io/badge/JavaScript-Intermediate-yellow)
-![HTML](https://img.shields.io/badge/HTML-Advanced-orange)
-![CSS](https://img.shields.io/badge/CSS-Advanced-blueviolet)
-![Django](https://img.shields.io/badge/Django-Intermediate-green)
 
 ---
 
 ## 🔥 Featured Projects
-- 🤖 **AgriVerse-Ai**  
-  - Tech: Python, Machine Learning, CNNs  
-  - An agricultural AI engine that detects crop diseases from plant pictures.
 
-- 🧠 **BudgetBrain**  
-  - Tech: Python, Flask, JavaScript  
-  - An intelligent personal finance tracker and budgeting assistant.
-
-- 🤖 **potens-intern-ai-vaidik-pipaliya**  
-  - Tech: Python, Machine Learning, AI Agents  
-  - An agentic AI workflow system developed during internship.
-
+| Project Name | Primary Stack | Core Description |
+| :--- | :--- | :--- |
+| 🤖 **AgriVerse-Ai** | Python, ML, CNNs | An agricultural computer vision engine that detects crop diseases from plant pictures. |
+| 🧠 **BudgetBrain** | Python, Flask, JavaScript | An intelligent personal finance manager with predictive budgeting analysis. |
+| 🤖 **potens-intern-ai** | Python, ML, AI Agents | An agentic AI workflow coordination system built for automated document classification. |
 
 ---
+
+## 📊 GitHub Metrics & Trophies
+
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <img src="https://github-stats-extended.vercel.app/api?username=Vaidik-Pipaliya&theme=dark&hide_border=false&include_all_commits=true&count_private=true" alt="Vaidik's GitHub Stats" width="100%" />
+    </td>
+    <td align="center" width="50%">
+      <img src="https://nirzak-streak-stats.vercel.app/?user=Vaidik-Pipaliya&theme=dark&hide_border=false" alt="Vaidik's Commit Streaks" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Vaidik-Pipaliya&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact" width="70%" />
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <strong>🏆 GitHub Trophies</strong><br/><br/>
+  <img src="https://github-profile-trophy-unserori.vercel.app/?username=Vaidik-Pipaliya&theme=darkhub&no-frame=false&row=1&column=7" alt="Vaidik's Trophies" />
+</p>
+
+---
+
+## 📈 3D Contribution Calendar
+
+<p align="center">
+  <picture>
+    <img src="https://raw.githubusercontent.com/Vaidik-Pipaliya/Vaidik-Pipaliya/output/isocalendar.svg" alt="3D Isometric Calendar" width="100%" />
+  </picture>
+</p>
+
+---
+
+## 🧩 Competitive Coding Profiles
+
+<p align="center">
+  <a href="https://leetcode.com/Vaidik_Pipaliya" target="_blank"><img src="https://img.shields.io/badge/LeetCode-Vaidik__Pipaliya-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" /></a>
+  <a href="https://www.hackerrank.com/vaidikpipaliya" target="_blank"><img src="https://img.shields.io/badge/HackerRank-vaidikpipaliya-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white" alt="HackerRank" /></a>
+</p>
+
+---
+
+## ✍️ Recent Medium Articles
+
 <div align="center">
-<img align="center" src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHhybWdnMGR2bXpoYXlrZTN1MXpsd3YxNG52ZjQyNWF6Z2prMnU4ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UIN7Andwh7kDZGUvmt/giphy.gif" />
+  <table width="100%">
+    <tr>
+      <td align="center" width="33%">
+        <a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@Vaidikpipaliya/0">
+          <img style="width: 100%" src="https://github-readme-medium-recent-article.vercel.app/medium/@Vaidikpipaliya/0" alt="Medium post 1" />
+        </a>
+      </td>
+      <td align="center" width="33%">
+        <a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@Vaidikpipaliya/1">
+          <img style="width: 100%" src="https://github-readme-medium-recent-article.vercel.app/medium/@Vaidikpipaliya/1" alt="Medium post 2" />
+        </a>
+      </td>
+      <td align="center" width="33%">
+        <a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@Vaidikpipaliya/2">
+          <img style="width: 100%" src="https://github-readme-medium-recent-article.vercel.app/medium/@Vaidikpipaliya/2" alt="Medium post 3" />
+        </a>
+      </td>
+    </tr>
+  </table>
 </div>
 
-
-<!-- 3D ISOMETRIC CALENDAR CONTRIBUTION GRAPH -->
-<picture>
-  <img src="https://raw.githubusercontent.com/Vaidik-Pipaliya/Vaidik-Pipaliya/output/isocalendar.svg" alt="Metrics Isometric Calendar" width="100%" />
-</picture>
-
 ---
 
-<div align="center">
-  <a href="https://open.spotify.com/user/31eupaek74k5ogjcezi6slhbocx4">
+## 🎵 Recently Played on Spotify
+
+<p align="center">
+  <a href="https://open.spotify.com/user/31eupaek74k5ogjcezi6slhbocx4" target="_blank">
     <img src="https://spotify-recently-played-readme.vercel.app/api?user=31eupaek74k5ogjcezi6slhbocx4&count=5" alt="Spotify recently played" />
   </a>
-</div>
+</p>
 
 ---
 
-<br clear="both">
+## 💡 Developer Quotes & Activity
 
-<div align="left" style="width: 100%">
-  <a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@Vaidikpipaliya/0">
-    <img style="width: 100%" src="https://github-readme-medium-recent-article.vercel.app/medium/@Vaidikpipaliya/0" alt="Medium post 1" />
-  </a>
-  <a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@Vaidikpipaliya/1">
-    <img style="width: 100%" src="https://github-readme-medium-recent-article.vercel.app/medium/@Vaidikpipaliya/1" alt="Medium post 2" />
-  </a>
-  <a target="_blank" href="https://github-readme-medium-recent-article.vercel.app/medium/@Vaidikpipaliya/2">
-    <img style="width: 100%" src="https://github-readme-medium-recent-article.vercel.app/medium/@Vaidikpipaliya/2" alt="Medium post 3" />
-  </a>
-</div>
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" alt="Developer Quote" />
+    </td>
+    <td align="center" width="50%">
+      <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbHhybWdnMGR2bXpoYXlrZTN1MXpsd3YxNG52ZjQyNWF6Z2prMnU4ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UIN7Andwh7kDZGUvmt/giphy.gif" alt="Coding GIF" height="150" />
+    </td>
+  </tr>
+</table>
 
----
-
-## 🧩 Coding Profiles
-- 🧠 LeetCode: https://leetcode.com/Vaidik_Pipaliya   
-- 🏆 HackerRank: https://www.hackerrank.com/vaidikpipaliya  
-
----
-
-## 📫 Connect With Me:-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/in/vaidik-pipaliya/)
-[![Email](https://img.shields.io/badge/Email-red?logo=gmail)](mailto:vaidikpipaliya@gmail.com)
-[![Medium](https://img.shields.io/badge/Medium-black?logo=medium)](https://medium.com/@Vaidikpipaliya)
-
----
-
-
----
-
-## 💡 Random Dev Quotes
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
-
----
-
-## ⚡ Recent Activity
+### ⚡ Recent Activity
 <!-- AUTO:ACTIVITY:START -->
 _Recent public activity will appear here after the workflow runs._
 <!-- AUTO:ACTIVITY:END -->
-
