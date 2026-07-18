@@ -34,28 +34,28 @@
   ],
   "projects": [
     {
-      "name": "RestFast",
-      "url": "https://github.com/Vaidik-Pipaliya/RestFast",
+      "name": "AgriVerse-Ai",
+      "url": "https://github.com/Vaidik-Pipaliya/AgriVerse-Ai",
       "homepage": "",
-      "focus": "Restaurant Booking System",
-      "summary": "A dining reservation platform built with HTML, CSS, and JavaScript, featuring table booking and a 2-hour limit live countdown.",
-      "heroLabel": "Restaurant Reservation"
+      "focus": "Agricultural AI Engine",
+      "summary": "An agricultural AI platform utilizing deep learning and CNNs to diagnose plant diseases and optimize crop management.",
+      "heroLabel": "Crop Disease Detection"
     },
     {
-      "name": "CyberGuard",
-      "url": "https://github.com/Vaidik-Pipaliya/cyberbullying-detection",
+      "name": "BudgetBrain",
+      "url": "https://github.com/Vaidik-Pipaliya/BudgetBrain",
       "homepage": "",
-      "focus": "ML & NLP Classification",
-      "summary": "Detects abusive and harmful cyberbullying content on social platforms using Python, Flask, and Machine Learning.",
-      "heroLabel": "Abuse Detection Model"
+      "focus": "Smart Finance Tracker",
+      "summary": "An intelligent budgeting assistant that helps users track, analyze, and categorize their personal finance transactions.",
+      "heroLabel": "Expense Classifier"
     },
     {
-      "name": "Krishi Rakshak",
-      "url": "https://github.com/Vaidik-Pipaliya/krishi-rakshak",
+      "name": "PotensInternAI",
+      "url": "https://github.com/Vaidik-Pipaliya/potens-intern-ai-vaidik-pipaliya",
       "homepage": "",
-      "focus": "Agricultural Computer Vision",
-      "summary": "A farming assistant that detects crop and plant diseases from uploaded images using Python, Flask, and ML/CNNs.",
-      "heroLabel": "Plant Disease Classifier"
+      "focus": "Agentic AI System",
+      "summary": "An AI agent system developed during the internship, implementing intelligent task workflows and predictive analytics.",
+      "heroLabel": "Agentic Internship AI"
     }
   ],
   "techStack": [
