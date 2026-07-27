@@ -11,7 +11,7 @@
 
 <h1 align="center">Hi, I'm Vaidik Pipaliya 👋</h1>
 <p align="center">
-  <strong>AI Developer | Machine Learning Engineer | MCA Student</strong>
+  <strong>AI & MLearning Engineer | MCA Student</strong>
 </p>
 
 <p align="center">
