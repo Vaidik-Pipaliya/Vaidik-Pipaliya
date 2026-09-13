@@ -148,5 +148,4 @@
 ### ⚡ Recent Activity
 <!-- AUTO:ACTIVITY:START -->
 - Aug 22, 2026: pushed 1 commit to [Vaidik-Pipaliya/GlobeTrotter-Empowering-Personalized-Travel-Planning](https://github.com/Vaidik-Pipaliya/GlobeTrotter-Empowering-Personalized-Travel-Planning).
-- Aug 13, 2026: pushed 1 commit to [Vaidik-Pipaliya/BCA--final-year-project](https://github.com/Vaidik-Pipaliya/BCA--final-year-project).
 <!-- AUTO:ACTIVITY:END -->
